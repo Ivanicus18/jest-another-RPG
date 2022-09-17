@@ -1,3 +1,9 @@
-const Game = require('./assets/lib/Game');
-
-new Game().initializeGame();
+(function () {
+    console.log("It's working!");
+  
+    const overworld = new Overworld({
+      element: document.querySelector(".game-container")
+    });
+    overworld.init();
+  
+  })();
